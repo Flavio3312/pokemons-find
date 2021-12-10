@@ -38,7 +38,7 @@ const Carta = (props) => {
           
                       );
                     })}</p>
-        </div><a href="https://pokeapi.co/"></a>
+        </div>
         <h1>PokeFinder</h1>
         </div>
       </div>
