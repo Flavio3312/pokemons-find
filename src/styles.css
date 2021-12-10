@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  
+}
+
+
+nav { 
+  background-color:none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav > img {
+
+  height: 10%;
+  width: 10%;
+
+
+}
+
+.searchbar-container {
+  display: flex;
+  margin: 0px auto;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.searchbar {
+  background: #fff;
+  margin-right: 20px;
+}
+.searchbar input {
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.searchbar input:focus {
+  outline: none;
+}
+
+.search-btn button {
+  background: #363636;
+  border: 2px solid #363636;
+  border-radius: 10px;
+  height: 100%;
+  color: white;
+  padding: 10px 12px;
+  outline: none;
+}
+.search-btn button:hover {
+  background: #ffc300;
+  color: #363636;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.App {
+  font-family: sans-serif;
+}
+.pokedex-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 50px 50px;
+}
+
+
+.pokemon-img {
+  float: left;
+  width: 100%;
+  position: block;
+  top: 0;
+  background: hsl(0, 3%, 56%);
+}
+
+
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.favorite {
+  font-size: 50px;
+  color: #ffc300;
+  padding: 15px;
+}
+
+svg {
+  background: #343a40;
+  border-radius: 50%;
+}
+.pagination-btn {
+  border: none;
+  background: white;
+}
+.pagination-btn:hover {
+  outline: none;
+}
+.pagination-btn:focus {
+  outline: none;
+}
+.not-Found-text {
+  display: block;
+  height: 80vh;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+
+.main-container{
+  
+  background:url(https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/pokemon/detective-pikachu.jpg) center / cover;
+  box-shadow:0 7px 14px rgba(0,0,0,.3);
+  
+}
+.overlay{
+  position: relative;
+  top:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(to bottom, transparent,transparent,#121212 70%);
+  transition:.7s ease;
+  opacity:0;
+}
+.main-container:hover .overlay{
+  opacity:1;
+}
+.content{
+  position: relative;
+  bottom:0;
+  width:100%;
+  height:230px;
+  color:black;
+  font-family: 'Poppins', sans-serif;
+  padding:0 10px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+}
+#name{
+  font-size:18px;
+}
+.text{
+  font-size:12px;
+  color:#f9c80e;
+}
+#duration{
+  color:#fff;
+  padding:3px 6px;
+  margin-left:5px;
+  border:1px solid rgba(255,255,255,.6);
+  border-radius:3px;
+  font-size:11px;
+}
+.rating{
+  font-size:12px;
+  color:#f9c80e;
+}
+.rating span{
+  color:#fff;
+}
+.cast{
+  font-size:25px;
+  color:#fff;
+}
+h1{
+  height:40px;
+  border:none;
+  border-radius:10px;
+  background:#f9c80e;
+  font-size:8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight:300;
+}
+
+footer {
+  font-family: inherit;
+  background:url(https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/pokemon/detective-pikachu.jpg) center / cover;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+  
+  
+}
+footer a {
+
+  color: #e58112;
+}
+
