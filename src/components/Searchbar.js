@@ -13,8 +13,7 @@ const Searchbar = (props) => {
   const onChange = (e) => {
     
     setSearch(e.target.value);
-    // console.log(e.target.value);
-    //recorrer allPokemonNames y buscar el pokemon que coincida con el valor del input
+
     const filteredPokemon = allPokemonNames.filter(pokemon => pokemon.toLowerCase().includes(e.target.value.toLowerCase()));
     console.log(filteredPokemon[0]);
     setSearch(filteredPokemon[0]);
