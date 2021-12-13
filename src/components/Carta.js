@@ -1,51 +1,48 @@
 import React from 'react';
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 const Carta = (props) => {
   const { pokemon } = props;
- 
+
+  React.useEffect(() => {
+    console.log(pokemon);
+  }, [pokemon]);
+  
+
   
 
   return (
-    <div class="main-container">
-        <img
-            src={pokemon.sprites.front_default}            
-            className="pokemon-img"
-            alt="pokemon"
-           />
-    <div class="overlay">
-      <div class="content">
+    
+           <div class="main-container">
+              <img
+                  src={pokemon.img}            
+                  className="pokemon-img"
+                  alt="pokemon"
+                  />
+            <div class="overlay">
+            <div class="content">
+     
+    
+                <div class="cast">
+                <h4>{pokemon.name}</h4>
+                  <p>Velocidad:{pokemon.velocidad}</p>
+                  <p>Tipo:{pokemon.type}</p>
+                  <p>Altura:{pokemon.height}</p>
+                  <p>Peso:{pokemon.weight}</p>
+                  <p>Fuerza:{pokemon.fuerza}</p>
+                  <p>Defensa:{pokemon.defensa}</p>
+                  <p>Vida:{pokemon.vida}</p>
+                </div>
+             </div>
+                  
          
-        <div class="rating">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
-        <span>9</span>
+           </div>
         </div>
-        <div class="cast">
-               <p>{pokemon.name}</p>
-               <p>#{pokemon.id}</p>
-               <p>{pokemon.types.map((type, idx) => {
-                  return (
-                    <div key={idx} className="pokemon-type-text">
-                        {type.type.name}
-                    </div>
-          
-                      );
-                    })}</p>
-        </div>
-        <h1>PokeFinder</h1>
-        </div>
-      </div>
-    </div>
-  
-
   );
 };
+
+
+
 
 export default Carta;

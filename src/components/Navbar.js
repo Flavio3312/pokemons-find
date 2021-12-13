@@ -9,7 +9,10 @@ const Navbar = () => {
   return (
     <nav>
       <div>
-        <img src={imgUrl} alt="pokeFinder" />
+        
+          <img src={imgUrl} alt="font" />
+      
+        
       </div>
     
     </nav>

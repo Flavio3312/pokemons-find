@@ -33,7 +33,7 @@ const Searchbar = (props) => {
         <input
           
           type="search"
-          placeholder="Search for a pokemon"
+          placeholder="nombre parcial del poke"
           onChange={onChange}
         />
     </div>
