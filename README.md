@@ -1,6 +1,6 @@
 # PokeFinder
 
-Este es un proyecto que consume el backend https://dashboard.heroku.com/apps/pokemonfinder-backend 
+Este es un proyecto que consume el backend https://pokemonfinder-backend.herokuapp.com/pokemons repo https://github.com/Flavio3312/pokemon-backend
 
 Puedes buscar Pokemons por nombre parcial....
 
