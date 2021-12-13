@@ -16,7 +16,7 @@ En el directorio del proyecto, puede ejecutar::
 Ejecuta la aplicación en el modo de desarrollo..\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-T
+
 
 ### `npm run  test`
 ### para correr los test de componentes
